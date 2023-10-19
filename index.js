@@ -65,6 +65,19 @@ function us(x, n) {
   };
   
   // İşi yapan fonksiyon
+  // function maaslariTopla(firma) {
+  //   if (Array.isArray(firma)) { // (1). durum
+  //     return firma.reduce((onceki, suanki) => onceki + suanki.salary, 0); // diziyi topla
+  //   } else { // (2.) durum
+  //     let toplam = 0;
+  //     for(let altDep of Object.values(altDep)) {
+  //       sum += maaslariTopla(altDep); // özçağrı ile alt departmanların çağrılması, bunu sum ile topla.
+  //     }
+  //     return sum;
+  //   }
+  // }
+  
+  // alert(maaslariTopla(firma)); // 2700
   function maaslariTopla(firma) {
     if (Array.isArray(firma)) { // (1). durum
       return firma.reduce((onceki, suanki) => onceki + suanki.salary, 0); // diziyi topla
